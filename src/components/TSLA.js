@@ -45,7 +45,7 @@ function TSLAChart() {
 
   useEffect(() => {
     createChart();
-  }, [data]);
+  });
 
   return (
     <div className="tsla-container">

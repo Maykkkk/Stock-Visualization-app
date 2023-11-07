@@ -10,10 +10,6 @@ function App() {
   const [selectedTicker, setSelectedTicker] = useState("AAPL");
   const [isHeaderExpanded, setIsHeaderExpanded] = useState(false);
 
-  const handleTickerChange = (event) => {
-    setSelectedTicker(event.target.value);
-  };
-
   const handleHeaderClick = () => {
     setIsHeaderExpanded(!isHeaderExpanded);
   };
