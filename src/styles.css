@@ -1,0 +1,133 @@
+/* styles.css */
+body {
+    overflow-y: scroll; /* Add a vertical scrollbar when content overflows */
+  }
+  
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Remove default margin to make header full-screen */
+    overflow: hidden; /* Prevent horizontal scroll */
+  }
+  
+  header {
+    background-color: #1e4166;
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0; /* Increase top and bottom padding for full-screen header */
+    position: relative; /* Add positioning for arrow */
+  }
+  
+  /* Add a downward arrow in the header */
+  header::before {
+    content: " ";
+    position: absolute;
+    bottom: 1rem; /* Adjust the arrow's vertical position */
+    left: 50%; /* Center the arrow horizontally */
+    transform: translateX(-50%); /* Center the arrow horizontally */
+    border: solid;
+    border-width: 0 1.5rem 1.5rem 1.5rem;
+    border-color: transparent transparent #fff transparent;
+  }
+  
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+  
+  .chart-section {
+    background-color: #9fd3c7;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 2rem;
+    height:600px;
+    width: 800px;
+  }
+  
+  .chart-container {
+    height: 400px;
+  }
+  
+  .ticker-selection {
+    display: flex;
+    align-items: center;
+  }
+  
+  label {
+    margin-right: 1rem;
+  }
+  
+  select {
+    padding: 0.5rem;
+    font-size: 16px;
+  }
+  
+  /* Add these styles to your App.css file */
+  .ticker-buttons {
+    display: flex;
+    justify-content: space-evenly; /* Equally space buttons */
+    gap: 1rem; /* Increase the gap between buttons */
+    padding: 2rem 0; /* Add vertical padding to center the buttons */
+  }
+  
+  .ticker-button {
+    font-size: 24px; /* Increase the font size for bigger buttons */
+    padding: 12px 20px; /* Increase the padding to make the buttons larger */
+    background-color: #385170; /* Example background color */
+    color: #fff; /* Example text color */
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+  
+  .ticker-button:hover {
+    background-color: #0056b3; /* Example background color on hover */
+  }
+  
+  .App {
+    text-align: center;
+  }
+  
+  .App-logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+  
+  @media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+      animation: App-logo-spin infinite 20s linear;
+    }
+  }
+  
+  .App-header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+  
+  .App-link {
+    color: #61dafb;
+  }
+  
+  @keyframes App-logo-spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .fhooter {
+    background-color: #1e4166;
+    padding: 100px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+  }

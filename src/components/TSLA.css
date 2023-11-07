@@ -1,0 +1,53 @@
+/* TSLA.css */
+.tsla-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-direction: column;
+  }
+  
+  .tsla-logo-container {
+    width: 40%;
+  }
+  
+  .tsla-chart-container {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #007BFF;
+    border-radius: 10px;
+    padding: 20px;
+  }
+  
+  .tsla-logo {
+    max-width: 100%;
+  }
+  
+  .tsla-chart {
+    width: 60%;
+  }
+  
+  .tsla-heading {
+    width: 40%;
+    text-align: center;
+  }
+  
+  .tsla-heading h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  
+  .tsla-heading p {
+    font-size: 16px;
+  }
+  
+  .tesla-logo {
+    width: 200px; /* Set the desired width and height for a larger, circular logo */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensure the image fills the circular container */
+    margin-bottom: 1rem; /* Add space between the image and the table */
+  }
+  

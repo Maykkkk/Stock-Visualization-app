@@ -1,0 +1,89 @@
+/* AAPL.css */
+.ticker-container {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column; /* Change to column for mobile responsiveness */
+    align-items: center; /* Center contents horizontally */
+    text-align: center; /* Center text within the container */
+  }
+  
+  .ticker-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center contents horizontally */
+  }
+  
+  .ticker-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+  
+  .ticker-table th, .ticker-table td {
+    padding: 8px 12px;
+    text-align: left;
+    border: 1px solid #ddd;
+  }
+  
+  .ticker-table th {
+    background-color: #007BFF;
+    color: #fff;
+  }
+  
+  .ticker-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .apple-logo {
+    width: 200px; /* Set the desired width and height for a larger, circular logo */
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensure the image fills the circular container */
+    margin-bottom: 1rem; /* Add space between the image and the table */
+  }
+
+  .microsoft-logo {
+    max-width: 300px; /* Adjust the size as needed */
+    height: auto;
+    margin-bottom: 1rem; /* Add space between the image and the table */
+  }
+  
+  .meta-logo {
+    max-width: 300px; /* Adjust the size as needed */
+    height: auto;
+    margin-bottom: 1rem; /* Add space between the image and the table */
+  }
+
+  .ticker-gif {
+    max-width: 100px;
+    height: auto;
+  }
+  
+  /* Add animation to the ticker container */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .ticker-container {
+    animation: fadeIn 1s ease-in-out;
+  }
+/* Add this to your AAPL.css */
+.fancy-paragraph {
+    font-size: 15px;
+    margin-top: 1rem;
+    text-align: center;
+    line-height: 1.5;
+    color: #333; /* Adjust the color as needed */
+  }
+  
